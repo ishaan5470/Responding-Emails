@@ -1,7 +1,6 @@
 const createLabel = require("./createlabel");
 const getUnreadEmails = require("./getunreadmsg");
 
-//main function that performs all the operations, in a specific time interval
 async function main(auth,labelName,google,res){
     
     const gmail = google.gmail({version:"v1",auth})
